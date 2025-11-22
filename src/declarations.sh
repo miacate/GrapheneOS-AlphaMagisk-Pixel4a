@@ -22,6 +22,8 @@ WORKDIR=".tmp"
 DOMAIN="https://github.com"
 REPOSITORY="PixeneOS" # GitHub repository name
 USER="pixincreate"    # GitHub username
+# not worth changing for personal repo since there are updates for the submods that I don't want to manage
+
 
 # Application version variables
 VERSION[AFSR]="${VERSION[AFSR]:-1.0.3}"
@@ -31,7 +33,7 @@ VERSION[AVBROOT_SETUP]="16636c3" # Commit hash
 VERSION[BCR]="${VERSION[BCR]:-1.77}"
 VERSION[CUSTOTA]="${VERSION[CUSTOTA]:-5.7}"
 VERSION[GRAPHENEOS]="${VERSION[GRAPHENEOS]:-}"
-VERSION[MAGISK]="${VERSION[MAGISK]:-29001}"
+VERSION[MAGISK]="${VERSION[MAGISK]:-30400}" # find updated versions in the telegram group
 VERSION[MSD]="${VERSION[MSD]:-1.13}"
 VERSION[OEMUNLOCKONBOOT]="${VERSION[OEMUNLOCKONBOOT]:-1.1}"
 
