@@ -5,7 +5,9 @@ source src/declarations.sh
 # Fetch the latest version of GrapheneOS and Magisk and sets up the OTA URL
 function get_latest_version() {
   local latest_grapheneos_version=2025012701
-  local latest_magisk_version=29001
+  # technically this $(curl -sL "https://releases.grapheneos.org/sunfish-stable" | sed 's/ .*//')
+  # does work but I've had issues for some reason
+  local latest_magisk_version=30400
   # magisk alpha has no public repo so
 
   if [[ GRAPHENEOS[UPDATE_TYPE] == "install" ]]; then
