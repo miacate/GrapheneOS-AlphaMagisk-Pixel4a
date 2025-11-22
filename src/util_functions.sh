@@ -256,13 +256,14 @@ function env_setup() {
   # Paths
   local avbroot="${WORKDIR}/tools/avbroot"
   local afsr="${WORKDIR}/tools/afsr"
-  local custota_tool="${WORKDIR}/tools/custota-tool"
+  # local custota_tool="${WORKDIR}/tools/custota-tool"
+  # simply not needed
   local my_avbroot_setup="${WORKDIR}/tools/my-avbroot-setup"
   local requirements_file="${my_avbroot_setup}/requirements.txt"
 
   # Add the paths to the PATH environment variable just so that the script can find them
-  if ! command -v avbroot &>/dev/null && ! command -v afsr &>/dev/null && ! command -v custota-tool &>/dev/null; then
-    export PATH="$(realpath ${afsr}):$(realpath ${avbroot}):$(realpath ${custota_tool}):$PATH"
+  if ! command -v avbroot &>/dev/null && ! command -v afsr &>/dev/null # && ! command -v custota-tool &>/dev/null; then
+    export PATH="$(realpath ${afsr}):$(realpath ${avbroot}):$PATH"
   fi
 
   # Enabled python virtual environment
@@ -483,7 +484,7 @@ function check_toml_env() {
 
 function supported_tools() {
   local arg="${1:-}"
-  local tools=("avbroot" "afsr" "alterinstaller" "custota" "custota-tool" "msd" "bcr" "oemunlockonboot" "my-avbroot-setup")
+  local tools=("avbroot" "afsr" "msd" "bcr" "oemunlockonboot" "my-avbroot-setup")
 
   if [[ "${arg}" == "cdd" ]]; then
     echo "${tools[@]}"
