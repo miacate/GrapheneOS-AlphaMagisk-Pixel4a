@@ -37,7 +37,12 @@ VERSION[OEMUNLOCKONBOOT]="${VERSION[OEMUNLOCKONBOOT]:-1.1}"
 
 # Magisk
 MAGISK[PREINIT]="${MAGISK_PREINIT:-}"
-MAGISK[URL]="https://transcendent.ink/b1dc47a-alpha-29001-magisk.apk"
+MAGISK[URL]="https://litter.catbox.moe/ync6m2d7yizb6pxl.apk"
+# temporary; only about 12 hours; long term storage isn't really needed here
+# more longterm storage could be found at fileditch.com for max 10G or catbox.moe for 200MB
+## litterbox has a 1GB max
+###
+# see here for new apks https://t.me/magiskalpha
 
 # Keys
 KEYS[AVB]="${KEYS[AVB]:-avb.key}"
