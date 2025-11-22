@@ -27,11 +27,11 @@ USER="pixincreate"    # GitHub username
 
 # Application version variables
 VERSION[AFSR]="${VERSION[AFSR]:-1.0.3}"
-VERSION[ALTERINSTALLER]="${VERSION[ALTERINSTALLER]:-2.0}"
+#VERSION[ALTERINSTALLER]="${VERSION[ALTERINSTALLER]:-2.0}"
 VERSION[AVBROOT]="${VERSION[AVBROOT]:-3.16.1}"
 VERSION[AVBROOT_SETUP]="16636c3" # Commit hash
 VERSION[BCR]="${VERSION[BCR]:-1.77}"
-VERSION[CUSTOTA]="${VERSION[CUSTOTA]:-5.7}"
+#VERSION[CUSTOTA]="${VERSION[CUSTOTA]:-5.7}"
 VERSION[GRAPHENEOS]="${VERSION[GRAPHENEOS]:-}"
 VERSION[MAGISK]="${VERSION[MAGISK]:-30400}" # find updated versions in the telegram group
 VERSION[MSD]="${VERSION[MSD]:-1.13}"
@@ -66,14 +66,14 @@ GRAPHENEOS[OTA_TARGET]="${GRAPHENEOS[OTA_TARGET]:-}"             # Will be const
 
 # Modules
 ADDITIONALS[AFSR]="${ADDITIONALS[AFSR]:-true}"                       # Android File system repack
-ADDITIONALS[ALTERINSTALLER]="${ADDITIONALS[ALTERINSTALLER]:-true}"   # Spoof Android package manager installer fields
+ADDITIONALS[ALTERINSTALLER]="${ADDITIONALS[ALTERINSTALLER]:-false}"   # Spoof Android package manager installer fields
 ADDITIONALS[BCR]="${ADDITIONALS[BCR]:-true}"                         # Basic Call Recorder
-ADDITIONALS[CUSTOTA]="${ADDITIONALS[CUSTOTA]:-true}"                 # Custom OTA Updater app
+ADDITIONALS[CUSTOTA]="${ADDITIONALS[CUSTOTA]:-false}"                 # Custom OTA Updater app
 ADDITIONALS[MSD]="${ADDITIONALS[MSD]:-true}"                         # Mass Storage Device on USB
 ADDITIONALS[OEMUNLOCKONBOOT]="${ADDITIONALS[OEMUNLOCKONBOOT]:-true}" # toggle OEM unlock button on boot
 # Tools
 ADDITIONALS[AVBROOT]="${ADDITIONALS[AVBROOT]:-true}"                   # Android Verified Boot Root
-ADDITIONALS[CUSTOTA_TOOL]="${ADDITIONALS[CUSTOTA_TOOL]:-true}"         # Custom OTA Tool
+ADDITIONALS[CUSTOTA_TOOL]="${ADDITIONALS[CUSTOTA_TOOL]:-false}"         # Custom OTA Tool
 ADDITIONALS[MY_AVBROOT_SETUP]="${ADDITIONALS[MY_AVBROOT_SETUP]:-true}" # My AVBRoot setup
 
 ADDITIONALS[ROOT]="${ADDITIONALS_ROOT:-false}"   # Only Magisk is supported
