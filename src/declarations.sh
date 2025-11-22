@@ -40,8 +40,8 @@ VERSION[OEMUNLOCKONBOOT]="${VERSION[OEMUNLOCKONBOOT]:-1.3}"
 
 # Magisk
 MAGISK[PREINIT]="${MAGISK_PREINIT:-}"
-MAGISK[URL]="https://litter.catbox.moe/ync6m2d7yizb6pxl.apk"
-# temporary; only about 12 hours; long term storage isn't really needed here
+MAGISK[URL]="https://files.catbox.moe/e5nade.apk"
+# was using litterbox but had issues resolving for some reason
 # more longterm storage could be found at fileditch.com for max 10G or catbox.moe for 200MB
 ## litterbox has a 1GB max
 ###
